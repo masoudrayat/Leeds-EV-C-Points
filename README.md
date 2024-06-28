@@ -50,46 +50,7 @@ To run the analysis, execute the provided Jupyter Notebook. The notebook contain
 jupyter notebook Leeds_EV_Chargepoint_Utilization.ipynb
 ```
 
-### Importing Libraries
-```python
-import matplotlib
-import pandas as pd
-import seaborn as sns
-import matplotlib.pyplot as plt
-from pyspark.sql import SparkSession
-from pyspark.sql.functions import sum as _sum
-from pyspark.sql.functions import col, dayofweek, concat, to_timestamp, hour, lit, count
-```
 
-### Loading Data
-```python
-# Load data
-DATA_PATH = './electric-chargepoint-analysis-2017-raw-domestics-data.csv'
-df = pd.read_csv(DATA_PATH)
-```
-
-### Data Preprocessing
-```python
-# Data preprocessing steps
-df['Start Date'] = pd.to_datetime(df['Start Date'])
-df['End Date'] = pd.to_datetime(df['End Date'])
-df['Energy (kWh)'] = df['Energy (kWh)'].astype(float)
-```
-
-### Visualization Example
-```python
-# Visualization of total energy consumption
-plt.figure(figsize=(10,6))
-sns.histplot(df['Energy (kWh)'], bins=50, kde=True)
-plt.title('Distribution of Energy Consumption')
-plt.xlabel('Energy (kWh)')
-plt.ylabel('Frequency')
-plt.show()
-```
-
-### PySpark Query Example
-```python
-# PySpark setup
 spark = SparkSession.builder.appName("EV Chargepoint Analysis").getOrCreate()
 spark_df = spark.createDataFrame(df)
 
