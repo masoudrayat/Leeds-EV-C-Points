@@ -12,7 +12,7 @@
 - [Usage](#usage)
 
 ## Project Overview
-This project focused on analyzing a dataset of electric vehicle charging events at various charging points in Leeds. The dataset, which includes 3,176,803 entries and 8 columns, covers a year from 2017-01-01 to 2018-01-01. It includes details like start and end dates, energy consumption, and plugin duration.
+This project focused on analysing a dataset of electric vehicle charging events at various charging points in Leeds. The dataset, which includes 3,176,803 entries and 8 columns, covers a year from 2017-01-01 to 2018-01-01. It includes details like start and end dates, energy consumption, and plugin duration.
 
 ## Key Highlights
 - Identified 25,126 unique charging points or stations.
