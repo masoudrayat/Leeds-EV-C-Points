@@ -4,6 +4,7 @@
 - [Project Overview](#project-overview)
 - [Key Highlights](#key-highlights)
 - [Data Exploration and Preprocessing](#data-exploration-and-preprocessing)
+- [Project Structure](#project-structure)
 - [Visualizations](#visualizations)
 - [Query with PySpark](#query-with-pyspark)
 - [Dependencies and Installation](#dependencies-and-installation)
@@ -27,6 +28,14 @@ The data exploration and preprocessing steps involve:
 - Importing necessary libraries
 - Loading the dataset
 - Cleaning and preparing the data for analysis
+
+## Project Structure
+
+The project is organized into the following directories and files:
+
+- `notebooks/`: Contains the Jupyter Notebook used for the analysis.
+  - `Leeds_EV_Chargepoint_Utilization.ipynb`: The main Jupyter Notebook that performs the analysis and generates the report.
+  - `link`: A link to the dataset.
 
 ## Visualizations
 The project includes various visualizations to understand the utilization patterns of EV chargepoints. These visualizations are created using libraries such as Matplotlib and Seaborn.
